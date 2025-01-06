@@ -26,7 +26,7 @@ def getWeather():
         name.config(text="CURRENT WEATHER")
         
         # weather
-        api = f"https://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid=1c56c95e7bf3c2aa8b53555c2d16c9ff"
+        api = f"https://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid=Your_Access_key" #Enter your Access
         json_data = requests.get(api).json()
         
         if json_data.get('cod') != 200:
